@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <locale.h>
 class MultiplicationTable {
 public:
     void print(int n) {
@@ -13,6 +13,7 @@ public:
 };
 
 int main() {
+    setlocale(LC_ALL, "Russian");
     int num;
     std::cout << "Введите число: ";
     std::cin >> num;
