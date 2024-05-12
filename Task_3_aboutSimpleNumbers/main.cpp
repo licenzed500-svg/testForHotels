@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <cmath>
-
+#include <locale.h>
 bool isPrime(int num) {
     if (num <= 1) return false;
     if (num == 2) return true;
@@ -22,6 +22,7 @@ std::vector<int> getPrimesInRange(int min, int max) {
 }
 
 int main() {
+    setlocale(LC_ALL, "Russian");
     int min = 11;
     int max = 20;
     std::vector<int> primes = getPrimesInRange(min, max);
