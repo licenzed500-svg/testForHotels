@@ -1,3 +1,6 @@
+//В УСЛОВИИ ЗАДАЧИ БЫЛО СКАЗАНО "РЕШИТЬ ЧЕРЕЗ МЕТОД"
+
+
 #include <iostream>
 #include <locale.h>
 class MultiplicationTable {
