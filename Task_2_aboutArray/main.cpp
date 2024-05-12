@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-
+#include <locale.h>
 int greatestCommonDivisor(int a, int b) {
     while (b != 0) {
         int temp = a;
@@ -43,6 +43,7 @@ std::vector<int> userInput() {
 }
 
 int main() {
+    setlocale(LC_ALL, "Russian");
     std::vector<int> arr = userInput();
     std::vector<int> result = commonDivisors(arr);
     for (int i : result) {
